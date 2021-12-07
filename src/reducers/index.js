@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
+import FetchPostsReducer from "./FetchPostsReducer";
+
 
 export default combineReducers({
-    dummyReducer: () => 10
+    posts: FetchPostsReducer
 });
