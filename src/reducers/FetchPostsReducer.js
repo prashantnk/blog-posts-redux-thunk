@@ -1,10 +1,10 @@
 const FetchPostsReducer = (posts = [], action) => {
-    // if (action.type === "FETCH_POSTS") {
-
-    //     return posts;
-    // }
-    console.log(action);
-    return posts;
+    switch (action.type) {
+        case "FETCH_POSTS":
+            return action.payload;
+        default:
+            return posts;
+    }
 }
 
 export default FetchPostsReducer;
